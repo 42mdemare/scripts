@@ -39,7 +39,8 @@ echo "🔹 Installation de Norminette..."
 pipx install norminette
 pip3 install norminette
 echo 'export PATH=$HOME/.venvs/norminette/bin:$PATH' >> ~/.bashrc
-source ~/.bashrc
+echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc
+source ~/.bashr
 
 echo "🔹 Installation de VSCode..."
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | tee /usr/share/keyrings/packages.microsoft.gpg > /dev/null
