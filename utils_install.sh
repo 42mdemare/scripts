@@ -31,8 +31,15 @@ echo "🔹 Installation de Python3 et Pip..."
 apt install -y python3 python3-pip
 pip3 install --upgrade pip setuptools
 
+echo "🔹 Installation de PIPX..."
+sudo apt install pipx
+pipx ensurepath
+
 echo "🔹 Installation de Norminette..."
+pipx install norminette
 pip3 install norminette
+echo 'export PATH=$HOME/.venvs/norminette/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
 
 echo "🔹 Installation de VSCode..."
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | tee /usr/share/keyrings/packages.microsoft.gpg > /dev/null
