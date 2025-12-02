@@ -35,6 +35,9 @@ echo "🔹 Installation de PIPX..."
 sudo apt install pipx
 pipx ensurepath
 
+echo "🔹 Installation de libglfw3-dev..."
+sudo apt-get install libglfw3-dev
+
 echo "🔹 Installation de Norminette..."
 pipx install norminette
 pip3 install norminette
